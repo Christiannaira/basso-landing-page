@@ -1,5 +1,6 @@
 
 import Hero from "./components/Hero"
+import Menu from "./components/Menu"
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
      
    <div className="main">
      <Hero/>
+     <Menu/>
    </div>
 
     </>
