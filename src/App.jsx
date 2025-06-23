@@ -6,7 +6,9 @@ function App() {
   return (
     <>
      
-    <Hero/>
+   <div className="main">
+     <Hero/>
+   </div>
 
     </>
   )
