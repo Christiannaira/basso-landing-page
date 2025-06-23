@@ -1,4 +1,5 @@
 import Button from "./Button";
+import hero from "../assets/hero_image.jpg";
 
 const Hero = () => {
    return (
@@ -17,7 +18,7 @@ const Hero = () => {
          </div>
 
         <div className="hero__content-image">
-            <img src="" alt="" />
+            <img src={hero} alt="" />
         </div>
 
       </div>
