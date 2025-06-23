@@ -11,7 +11,7 @@ const Hero = () => {
 
          <div className="hero__content--headline">
             <h1>
-               Crave More Than Coffee? <br /> We've Got Your Cup
+               Crave More Than Coffee? <br /> We've Got Your Cup!
             </h1>
             <p>
                Fuel your mood with handcrafted drinks <br /> whether you're a
