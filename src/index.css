@@ -6,4 +6,64 @@
     padding: 0;
 }
 
+:root {
+    --primary-color: #FBF1CE; 
+    --secondary-color: #A42103;
+}
+
 /*hero style*/
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-color);
+}
+
+.hero__content--headline h1 {
+    font-size: 4rem;
+    font-family: "Archivo", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: #333;
+}
+
+.hero__content--headline p {
+    margin: 1rem 0 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: #777;
+}
+
+.hero__content--logo img {
+    width: 160px;
+    display: block;
+}
+
+.main__button {
+    text-align: center;
+}
+
+.main__button button {
+    background-color: var(--secondary-color);
+    color: #f7f7f7;
+    border: none;
+    outline: none;
+    padding: 16px 20px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+.hero__content--image {
+    margin-top: 2rem;
+}
+
+.hero__content--image img {
+    width: 800px;
+    max-width:100%;
+    display: block;
+}
