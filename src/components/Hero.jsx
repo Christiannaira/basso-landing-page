@@ -17,7 +17,7 @@ const Hero = () => {
             <Button text={"Follow us for your daily drink fix & fresh drops!"}/>
          </div>
 
-        <div className="hero__content-image">
+        <div className="hero__content--image">
             <img src={hero} alt="" />
         </div>
 
