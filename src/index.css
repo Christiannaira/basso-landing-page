@@ -238,15 +238,16 @@ body {
     text-align: center;
 }
 
+.gallery__content--main {
+    margin: 3rem 0;
+}
+
 .gallery__content--main--images {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.gallery__content--main {
-    margin: 3rem 0;
-}
 
 .gallery__content--main h3 {
     font-family: "Archivo", sans-serif;
@@ -256,21 +257,21 @@ body {
 }
 
 
-.gallery__content--main--images > .row {
+/* .gallery__content--main--images > .row {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-}
+} */
 
-.gallery__content--main--images > .row img {
+.gallery__content--main--images .row img {
     position: relative;
     display: block;
     max-width: 100%;
     width: 300px;
-    margin: 20px ;
     border-radius: 8px;
     transition: .3s ease-out;
+    margin: 1rem;
     margin-top: 2rem;
 }
 
