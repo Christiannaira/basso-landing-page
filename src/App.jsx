@@ -1,4 +1,5 @@
 
+import About from "./components/About"
 import Hero from "./components/Hero"
 import Menu from "./components/Menu"
 
@@ -10,6 +11,7 @@ function App() {
    <div className="main">
      <Hero/>
      <Menu/>
+     <About/>
    </div>
 
     </>
