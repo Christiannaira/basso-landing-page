@@ -220,3 +220,60 @@ body {
 .about__content > div:nth-child(7) {
     margin-bottom: 2rem;
 }
+
+/*gallery style*/
+
+.gallery__content {
+    padding: 5rem 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery__content--headline h2 {
+    font-size: 2.8rem;
+    font-family: "Archivo", sans-serif;
+    font-weight: 700;
+    color: #222;
+    text-align: center;
+}
+
+.gallery__content--main--images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery__content--main {
+    margin: 3rem 0;
+}
+
+.gallery__content--main h3 {
+    font-family: "Archivo", sans-serif;
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+
+
+.gallery__content--main--images > .row {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.gallery__content--main--images > .row img {
+    position: relative;
+    display: block;
+    max-width: 100%;
+    width: 300px;
+    margin: 20px ;
+    border-radius: 8px;
+    transition: .3s ease-out;
+    margin-top: 2rem;
+}
+
+.gallery__content--main--images > .row img:hover {
+    transform: rotate(-3deg);
+}
