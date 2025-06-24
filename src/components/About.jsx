@@ -13,7 +13,7 @@ const About = () => {
             <img src={team} alt="team-image" />
          </div>
 
-         <div className="about__contnet--title">
+         <div className="about__content--title">
             <h3>More Than Just Coffee. It's Mood.</h3>
          </div>
 
