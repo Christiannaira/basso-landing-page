@@ -271,3 +271,17 @@ body {
 .gallery__content--main--images > .row img:hover {
     transform: rotate(-3deg);
 }
+
+/*cta style*/
+
+.cta__content {
+    height: 100vh;
+    padding: 5rem 0;
+    /* align-items: center;
+    display: flex;
+    flex-direction: column; */
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("./assets/10.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
