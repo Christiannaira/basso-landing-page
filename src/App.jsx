@@ -4,6 +4,7 @@ import Hero from "./components/Hero"
 import Menu from "./components/Menu"
 import Gallery from "./components/Gallery";
 import Cta from "./components/Cta";
+import Contact from "./components/Contact";
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
      <About/>
      <Gallery/>
      <Cta/>
+     <Contact/>
    </div>
 
     </>
