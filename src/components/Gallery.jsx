@@ -10,39 +10,36 @@ import nine from "../assets/09.jpg";
 import ten from "../assets/10.jpg";
 
 const Gallery = () => {
-  return (
-    <div className='gallery__content'>
-      
-        <div className="gallery__content--headline">
-            <h2>Our Beloved Customers</h2>            
-        </div>
+   return (
+      <div className="gallery__content">
+         <div className="gallery__content--headline">
+            <h2>Our Beloved Customers</h2>
+         </div>
 
-        <div className="gallery__content--main">
-              <h3>Gallery</h3>
-              <div className="gallery__content--main--images">
-                <div className="row">
+         <div className="gallery__content--main">
+            <h3>Gallery</h3>
+            <div className="gallery__content--main--images">
+               <div className="row">
                   <img src={one} alt="image-one" />
                   <img src={two} alt="image-two" />
                   <img src={three} alt="image-three" />
-                </div>
+               </div>
 
-                 <div className="row">
-                  <img src={one} alt="image-one" />
-                  <img src={two} alt="image-two" />
-                  <img src={three} alt="image-three" />
-                </div>
+               <div className="row">
+                  <img src={four} alt="image-one" />
+                  <img src={five} alt="image-two" />
+                  <img src={six} alt="image-three" />
+               </div>
 
-                 <div className="row">
-                  <img src={one} alt="image-one" />
-                  <img src={two} alt="image-two" />
-                  <img src={three} alt="image-three" />
-                </div>
-                
-              </div>
+               <div className="row">
+                  <img src={seven} alt="image-one" />
+                  <img src={eight} alt="image-two" />
+                  <img src={nine} alt="image-three" />
+               </div>
             </div>
+         </div>
+      </div>
+   );
+};
 
-    </div>
-  )
-}
-
-export default Gallery
+export default Gallery;
