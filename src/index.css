@@ -269,6 +269,23 @@ body {
    transform: rotate(-3deg);
 }
 
+.gallery__btn {
+   font-family: "Archivo", sans-serif;
+   text-align: center;
+   margin-top: 1rem;
+   font-size: 1.5rem;
+   padding: 1rem 2rem;
+   background-color: #f1f1f1;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: .3s;
+}
+
+.gallery__btn:hover {
+   background-color: var(--secondary-color);
+   color: #f1f1f1;
+}
+
 /*cta style*/
 
 .cta__content {
