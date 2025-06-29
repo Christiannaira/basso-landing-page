@@ -1,4 +1,5 @@
 import location from "../assets/location.jpg";
+import Button from "./Button";
 
 const Contact = () => {
    return (
@@ -27,6 +28,9 @@ const Contact = () => {
             </div>
          </div>
          <h3 className="contact__content_address"><address><i class="ri-map-pin-2-line"></i>Sawangan Food Park, Legazpi, Philippines</address></h3>
+         <div className="contact__content--btn">
+            <Button text={"Follow us for your daily drink & fresh drops!"}/>
+         </div>
       </div>
    );
 };

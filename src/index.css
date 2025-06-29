@@ -325,7 +325,7 @@ body {
    align-items: center;
    justify-content: center;
    flex-wrap: wrap;
-   margin: 3rem 0;
+   margin: 3rem 0 1rem;
 }
 
 .contact__content--location > div {
@@ -373,4 +373,35 @@ body {
 
 .bx {
     color: red !important;
+}
+
+.contact__content--btn {
+   margin-top: 4rem;
+}
+
+/*footer style*/
+
+
+.footer__content {
+   padding: 5rem 0 2rem;
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+   background-color: var(--primary-color);
+   font-family: "Archivo", sans-serif;
+}
+
+.footer__content--logo img {
+   max-width: 100%;
+   width: 250px;
+   display: block;
+}
+
+.footer__content--copyright {
+   margin-top: 3rem;
+}
+
+.footer__content--copyright p {
+   font-weight: 500;
+   color: #555;
 }

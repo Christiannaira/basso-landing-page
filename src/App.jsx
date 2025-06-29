@@ -5,6 +5,7 @@ import Menu from "./components/Menu"
 import Gallery from "./components/Gallery";
 import Cta from "./components/Cta";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
      <Gallery/>
      <Cta/>
      <Contact/>
+     <Footer/>
    </div>
 
     </>
