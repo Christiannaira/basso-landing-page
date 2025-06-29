@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import one from "../assets/01.jpg";
 import two from "../assets/02.jpg";
 import three from "../assets/03.jpg";
@@ -10,84 +10,79 @@ import eight from "../assets/08.jpg";
 import nine from "../assets/09.jpg";
 
 const Gallery = () => {
-   const [showImages, setShowImages] = useState(false);
-   const [showText, setShowText] = useState("See More");
+  const [showMore, setShowMore] = useState(false);
+  const galleryTopRef = useRef(null);
+  const galleryBottomRef = useRef(null);
 
-   console.log(showImages);
-   console.log(showText);
+  const handleClick = () => {
+    setShowMore((prev) => !prev);
 
-   const handleClick = () => {
+    setTimeout(() => {
+      const targetRef = !showMore ? galleryBottomRef : galleryTopRef;
+      targetRef.current?.scrollIntoView({ behavior: "smooth" });
+    }, 100);
+  };
 
-      setShowImages(!showImages);
-      
-      if (showText === "See More") {
-         setShowText("See Less");
-      } else {
-         setShowText("See More");
-      }
+  return (
+    <div className="gallery__content" ref={galleryTopRef} id="gallery">
+      <div className="gallery__content--headline">
+        <h2>Our Beloved Customers</h2>
+      </div>
 
-   };
+      <div className="gallery__content--main">
+        <h3>Gallery</h3>
 
-   return (
-      <div className="gallery__content">
-         <div className="gallery__content--headline">
-            <h2>Our Beloved Customers</h2>
-         </div>
+        <div className="gallery__content--main--images">
+          <div className="row">
+            <img src={one} alt="customer-1" />
+            <img src={two} alt="customer-2" />
+            <img src={three} alt="customer-3" />
+          </div>
 
-         <div className="gallery__content--main">
-            <h3>Gallery</h3>
-            <div className="gallery__content--main--images">
-               <div className="row">
-                  <img src={one} alt="image-one" />
-                  <img src={two} alt="image-two" />
-                  <img src={three} alt="image-three" />
-               </div>
+          <div className="row">
+            <img src={four} alt="customer-4" />
+            <img src={five} alt="customer-5" />
+            <img src={six} alt="customer-6" />
+          </div>
 
-               <div className="row">
-                  <img src={four} alt="image-one" />
-                  <img src={five} alt="image-two" />
-                  <img src={six} alt="image-three" />
-               </div>
+          <div className="row">
+            <img src={seven} alt="customer-7" />
+            <img src={eight} alt="customer-8" />
+            <img src={nine} alt="customer-9" />
+          </div>
+        </div>
 
-               <div className="row">
-                  <img src={seven} alt="image-one" />
-                  <img src={eight} alt="image-two" />
-                  <img src={nine} alt="image-three" />
-               </div>
+        {showMore && (
+          <div
+            className="gallery__content--main--images gallery__hidden"
+            ref={galleryBottomRef}
+          >
+            <div className="row">
+              <img src={one} alt="extra-1" />
+              <img src={two} alt="extra-2" />
+              <img src={three} alt="extra-3" />
             </div>
 
-            {showImages ? (
-               <>
-                  <div className="gallery__content--main--images gallery__hidden">
-                     <div className="row">
-                        <img src={one} alt="image-one" />
-                        <img src={two} alt="image-two" />
-                        <img src={three} alt="image-three" />
-                     </div>
+            <div className="row">
+              <img src={four} alt="extra-4" />
+              <img src={five} alt="extra-5" />
+              <img src={six} alt="extra-6" />
+            </div>
 
-                     <div className="row">
-                        <img src={four} alt="image-one" />
-                        <img src={five} alt="image-two" />
-                        <img src={six} alt="image-three" />
-                     </div>
+            <div className="row">
+              <img src={seven} alt="extra-7" />
+              <img src={eight} alt="extra-8" />
+              <img src={nine} alt="extra-9" />
+            </div>
+          </div>
+        )}
 
-                     <div className="row">
-                        <img src={seven} alt="image-one" />
-                        <img src={eight} alt="image-two" />
-                        <img src={nine} alt="image-three" />
-                     </div>
-                  </div>
-               </>
-            ) : (
-               <></>
-            )}
-
-            <h4 className="gallery__btn" onClick={handleClick}>
-               {showText}
-            </h4>
-         </div>
+        <h4 className="gallery__btn" onClick={handleClick}>
+          {showMore ? "See Less" : "See More"}
+        </h4>
       </div>
-   );
+    </div>
+  );
 };
 
 export default Gallery;
