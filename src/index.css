@@ -92,6 +92,28 @@ body {
    cursor: pointer;
 }
 
+@media screen and (max-width: 1200px) {
+.hero__content--headline h1 {
+   font-size: 3.5rem;
+}
+
+.hero__content--headline p {
+   font-size: 1.3rem;
+}
+
+.hero__content--logo img {
+   width: 110px;
+}
+
+.hero__content--image img {
+   width: 700px;
+}
+}
+
+@media screen and (max-width: 992px) {
+   
+}
+
 /*menu style*/
 
 .menu__content {
