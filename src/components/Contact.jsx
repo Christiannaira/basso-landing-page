@@ -26,6 +26,7 @@ const Contact = () => {
                </div>
             </div>
          </div>
+         <h3 className="contact__content_address"><address><i class="ri-map-pin-2-line"></i>Sawangan Food Park, Legazpi, Philippines</address></h3>
       </div>
    );
 };
