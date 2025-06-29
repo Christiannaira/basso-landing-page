@@ -367,6 +367,10 @@ body {
    color: var(--secondary-color);
 }
 
+.contact__content_address i {
+   margin-right: 5px;
+}
+
 .bx {
     color: red !important;
 }
