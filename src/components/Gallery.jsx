@@ -37,18 +37,22 @@ const Gallery = () => {
             <img src={one} alt="customer-1" />
             <img src={two} alt="customer-2" />
             <img src={three} alt="customer-3" />
+            <img src={four} alt="customer-4" />
+
           </div>
 
           <div className="row">
-            <img src={four} alt="customer-4" />
             <img src={five} alt="customer-5" />
             <img src={six} alt="customer-6" />
+            <img src={seven} alt="customer-7" />
+            <img src={eight} alt="customer-8" />
           </div>
 
           <div className="row">
-            <img src={seven} alt="customer-7" />
-            <img src={eight} alt="customer-8" />
             <img src={nine} alt="customer-9" />
+            <img src={one} alt="extra-1" />
+            <img src={two} alt="extra-2" />
+            <img src={three} alt="extra-3" />
           </div>
         </div>
 
@@ -57,20 +61,15 @@ const Gallery = () => {
             className="gallery__content--main--images gallery__hidden"
             ref={galleryBottomRef}
           >
-            <div className="row">
-              <img src={one} alt="extra-1" />
-              <img src={two} alt="extra-2" />
-              <img src={three} alt="extra-3" />
-            </div>
 
             <div className="row">
               <img src={four} alt="extra-4" />
               <img src={five} alt="extra-5" />
               <img src={six} alt="extra-6" />
+              <img src={seven} alt="extra-7" />
             </div>
 
             <div className="row">
-              <img src={seven} alt="extra-7" />
               <img src={eight} alt="extra-8" />
               <img src={nine} alt="extra-9" />
             </div>
